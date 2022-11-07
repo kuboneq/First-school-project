@@ -10,7 +10,7 @@ def porownanie(zgadywanax, wylosowanay):
     global proba
     
     zgadywanax = input("Podaj liczbę od 1 do 100: \n")
-    if zgadywanax.isdigit():
+    if not zgadywanax.isalpha():
       zgadywanax = int(zgadywanax)
 
       if zgadywanax <= 0:
